@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 6rem 8vw;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 100;
+}
+
+.nav a {
+  margin-right: 1.2rem;
+  text-decoration: none;
+  color: #334155;
+  font-size: 0.9rem;
+}
+
+.nav a:hover {
+  color: #0284c7;
+}
+
+.nav-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.9)),
+    url("assets/travel.picture1");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  margin-top: 1rem;
+  color: #475569;
+}
+
+/* ABOUT */
+.about {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* EDUCATION */
+.education {
+  display: grid;
+  grid-template-columns: 1fr 0.6fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.education-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* EXPERIENCE */
+.experience {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+}
+
+.experience-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 1.5rem;
+  margin-top: 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* HOBBIES */
+.image-row {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.image-row img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* CONTACT */
+.contact a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0284c7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #64748b;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .about, .education, .experience {
+    grid-template-columns: 1fr;
+  }
+}
